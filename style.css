@@ -42,9 +42,15 @@ Reusable Container Styles
   position: relative;
 }
 
+.section__quiz,
+.section__about,
+.section__blog {
+  position: relative;
+  padding: 16rem 0;
+}
+
 .container {
   max-width: 120rem;
-  padding: 3.2rem;
   margin: 0 auto;
 }
 
@@ -306,10 +312,7 @@ Main Header Styles
 /******************
 Quiz Styles
 *******************/
-.section__quiz, .about-us {
-  position: relative;
-  padding: 12.8rem 0 9.6rem;
-}
+
 
 .quiz-text-ctn {
   position: relative;
@@ -574,98 +577,48 @@ td, th {
 }
 
 /******************
-Reminder Styles
+Blog Styles
 *******************/
-.far {
-  padding: 0 10px;
+.blog-title {
+  color: #dd5340;
+  font-size: 4.4rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
 
-/* Cards */
-body .row {
-  margin: 2rem 0;
-}
-
-.card-body {
-  text-align: left;
-}
-
-.btn-block {
-  margin-top: 1.25rem;
-}
-
-.item-data {
-  display: none;
-}
-
-.fa-trash-alt {
-  color: crimson;
-}
-
-/* Modal */
-input.highlight {
-  border: red 1px solid;
-}
-
-.required-msg {
-  color: red;
-}
-
-.modal {
-  text-align: left;
-}
-
-.btn-group-toggle {
+.blog-sub{
+  color: #dd5340;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
 }
 
-.interval {
-  width: 60px;
-  margin: 0 3px;
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 4.6rem;
 }
 
-.navbar-color {
-  background-color: #F55C47;
+article {
+  border-radius: 3px;
+  width: 35rem;
+  height: 43rem;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
-.nav-text {
-  color: #fff;
-  font-size: 2.4rem;
-  margin-right: 2rem;
-}
-
-.nav-text:hover {
-  color: #7b2e24;
-}
-
-.pt-5 {
-  padding-top: 100rem !important;
-}
-
-.card-header-color {
-  background-color: #feefed !important;
-  color: #7b2e24 !important;
-}
-
-.btn-color {
-  background-color: #F55C47 !important;
-  color: #fff !important;
-}
-
-/******************
-Blog Styles
-*******************/
 figure {
-  border: thin #c0c0c0 solid;
   display: flex;
   flex-flow: column;
-  padding: 5px;
-  max-width: 220px;
-  margin: auto;
 }
 
 .blog-img {
-  max-width: 220px;
-  max-height: 150px;
+  width: 100%;
+  height: 20rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 figcaption {
@@ -673,39 +626,34 @@ figcaption {
   color: #fff;
   padding: .3rem;
   text-align: center;
+  font-size: 1.8rem;
 }
 
-.blog-container {
-  display: flex;
-  align-items: center;
-}
-
-.containers {
-  background-color: #feefed;
-  padding: 2rem;
-  margin: 2rem;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  gap: .4rem;
+article h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 2rem 1rem;
 }
 
 article p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  margin: 2rem 1rem;
 }
 
 .input-btn {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-family: inherit;
   background-color: #dd5340;
   color: #fff;
-  text-decoration: none;
   border: none;
-  border-radius: 3px;
+  border-radius: 3rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-  padding: .5rem .5rem;
+  padding: .8rem 1.5rem;
   cursor: pointer;
+}
+
+.input-btn:hover {
+  background-color: #7b2e24;
 }
 
 /******************
