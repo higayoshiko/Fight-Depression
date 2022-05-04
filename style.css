@@ -42,13 +42,6 @@ Reusable Container Styles
   position: relative;
 }
 
-.section__quiz,
-.section__about,
-.section__blog {
-  position: relative;
-  padding: 16rem 0;
-}
-
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -66,6 +59,79 @@ Reusable Container Styles
 
 .grid-4-columns {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.section__quiz,
+.section__about,
+.section__reminder {
+  position: relative;
+  padding: 16rem 0 20rem;
+}
+
+.col__text-ctn {
+  position: relative;
+  align-self: flex-start;
+  text-align: left;
+  background-color: #feefed;
+  padding: 4rem;
+  border-radius: 4rem;
+}
+
+.col--blob {
+  position: absolute;
+  bottom: -3rem;
+  right: 3rem;
+  background-color: #dd5340;
+  width: 8rem;
+  height: 6rem;
+  border-radius: 84% 56% 68% 77% / 58% 70% 70% 90%;
+  z-index: 0;
+}
+
+.col--blobline {
+  position: absolute;
+  bottom: -4rem;
+  right: 3.7rem;
+  width: 8rem;
+  height: 6rem;
+  border: 2px solid #000;
+  border-radius: 84% 56% 68% 77% / 58% 70% 70% 90%;
+  z-index: 0;
+}
+
+.col__h2 {
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.col__p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #dd5340;
+  color: #fff;
+  border: none;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background-color: #7b2e24;
+}
+
+.col-btn {
+  font-size: 2rem;
+  padding: 1.3rem 2rem;
 }
 
 /******************
@@ -136,7 +202,7 @@ Nav Styles
   list-style: none;
 }
 
-.ul li a:not(.quiz-btn) {
+.ul li a:not(.col-btn) {
   text-decoration: none;
   color: #dd5340;
   font-size: 2.4rem;
@@ -144,29 +210,8 @@ Nav Styles
   transition: all .3s;
 }
 
-.ul li a:not(.quiz-btn):hover {
+.ul li a:not(.col-btn):hover {
   border-bottom: 3px solid;
-}
-
-.quiz-btn,
-.quiz-btn:link,
-.quiz-btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: #dd5340;
-  border: none;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
-  border-radius: 50rem;
-  color: #fff;
-  padding: 1.3rem 2rem;
-  cursor: pointer;
-  transition: all .2s;
-}
-
-.quiz-btn:hover {
-  background-color: #7b2e24;
 }
 
 .burger {
@@ -312,50 +357,6 @@ Main Header Styles
 /******************
 Quiz Styles
 *******************/
-
-
-.quiz-text-ctn {
-  position: relative;
-  align-self: flex-start;
-  text-align: left;
-  background-color: #feefed;
-  padding: 4rem;
-  border-radius: 4rem;
-}
-
-.quiz-text__h2 {
-  font-size: 4.4rem;
-  margin-bottom: 3.2rem;
-}
-
-.quiz-text__p {
-  font-size: 2rem;
-  line-height: 1.5;
-  margin-bottom: 4.8rem;
-}
-
-.quiz-text--blob {
-  position: absolute;
-  bottom: -3rem;
-  right: 3rem;
-  background-color: #dd5340;
-  width: 8rem;
-  height: 6rem;
-  border-radius: 84% 56% 68% 77% / 58% 70% 70% 90%;
-  z-index: 0;
-}
-
-.quiz-text--blobline {
-  position: absolute;
-  bottom: -4rem;
-  right: 3.7rem;
-  width: 8rem;
-  height: 6rem;
-  border: 2px solid #000;
-  border-radius: 84% 56% 68% 77% / 58% 70% 70% 90%;
-  z-index: 0;
-}
-
 .quiz-img-ctn {
   justify-self: flex-end;
   position: relative;
@@ -520,6 +521,22 @@ Quiz Styles
 }
 
 /******************
+Reminder Styles
+*******************/
+.reminder__img-ctn {
+  position: relative;
+  right: -1rem;
+  background-color: #7b2e24;
+  width: 41rem;
+  height: 41rem;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.reminder-img {
+  height: 30rem;
+}
+
+/******************
 Result-Page Styles
 *******************/
 .flex-ctn {
@@ -579,15 +596,21 @@ td, th {
 /******************
 Blog Styles
 *******************/
+.section__blog {
+  position: relative;
+  padding: 14rem 0;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
 .blog-title {
-  color: #dd5340;
+  color: #7b2e24;
   font-size: 4.4rem;
   text-align: center;
   margin-bottom: 1.2rem;
 }
 
 .blog-sub{
-  color: #dd5340;
+  color: #7b2e24;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
@@ -597,10 +620,12 @@ Blog Styles
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  margin-top: 4.6rem;
+  margin-top: 8rem;
 }
 
 article {
+  text-align: center;
+
   border-radius: 3px;
   width: 35rem;
   height: 43rem;
@@ -625,35 +650,23 @@ figcaption {
   background-color: #7b2e24;
   color: #fff;
   padding: .3rem;
-  text-align: center;
   font-size: 1.8rem;
 }
 
 article h3 {
   font-size: 1.8rem;
-  text-align: center;
   margin: 2rem 1rem;
 }
 
 article p {
   font-size: 1.6rem;
   margin: 2rem 1rem;
+  text-align: left;
 }
 
-.input-btn {
+.blog-btn {
   font-size: 1.6rem;
-  font-family: inherit;
-  background-color: #dd5340;
-  color: #fff;
-  border: none;
-  border-radius: 3rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-  padding: .8rem 1.5rem;
-  cursor: pointer;
-}
-
-.input-btn:hover {
-  background-color: #7b2e24;
+  padding: .8rem 1.2rem;
 }
 
 /******************

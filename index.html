@@ -26,9 +26,9 @@
           <ul class="ul">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="reminder.html">Reminder</a></li>
-            <li><a href="#section__quiz" class="quiz-btn">Take the quiz</a></li>
+            <li><a href="#section__quiz" class="quiz-btn btn col-btn">Take the quiz</a></li>
           </ul>
         </nav>
         <div class="nav-blobline">&nbsp;</div>
@@ -38,7 +38,7 @@
         <ul class="ul-2">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="reminder.html">Reminder</a></li>
           <li><a href="#section__quiz">Take the quiz</a></li>
         </ul>
@@ -69,14 +69,14 @@
     <main>
       <section class="section__quiz" id="section__quiz">
         <div class="container grid grid-2-columns">
-          <div class="quiz-text-ctn">
-            <h2 class="quiz-text__h2">Take quiz now!</h2>
-            <p class="quiz-text__p">Depression is very common and a serious illness. It affects your everyday life, the way you feel, the way you think
+          <div class="col__text-ctn">
+            <h2 class="col__h2">Take quiz now!</h2>
+            <p class="col__p">Depression is very common and a serious illness. It affects your everyday life, the way you feel, the way you think
               and the way you communicate with others. If you think you are suffering from depression it is better to see an expert. Please take our 2 minute
               quiz to check if you have depression.</p>
-            <a class="quiz-btn">Take the quiz</a>
-            <div class="quiz-text--blob">&nbsp;</div>
-            <div class="quiz-text--blobline">&nbsp;</div>
+            <a class="quiz-btn btn col-btn">Take the quiz</a>
+            <div class="col--blob">&nbsp;</div>
+            <div class="col--blobline">&nbsp;</div>
           </div>
           <div class="quiz-img-ctn">
             <img src="image/quiz-img.png" class="quiz-img" alt="girl">
@@ -308,70 +308,89 @@
         </div>
       </section>
 
-      <section class="section__blog container" id="blog">
-        <h2 class="blog-title">Blogs and Articles </h2>
-        <p class="blog-sub">You are not alone.</p>
-        <div class="blog-container">
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image01.jpg" alt="sunset">
-              <figcaption>Hope</figcaption>
-            </figure>
-            <h3>Banish Depression from Your System</h3>
-            <p>Sadhguru speaks on how to handle yourself in such a way that you can banish depression from your system: “In yoga, depression is handled at the level of the...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://isha.sadhguru.org/yoga/yoga-articles-yoga/banish-depression-from-your-system/';" value="Read More" />
-          </article>
+      <section class="section__reminder">
+        <div class="container grid grid-2-columns">
+          <div class="reminder__img-ctn">
+            <img src="image/calendar.svg" class="reminder-img" alt="reminder">
+          </div>
+          <div class="col__text-ctn">
+            <h2 class="col__h2">Try our reminder feature!</h2>
+            <p class="col__p">Remembering even important things might be a struggle when you have
+              depression. This mental illness has been linked to memory problems and confusion. Keeping a
+              checklist will help you with your daily challenges and make things a little bit easier.
+            </p>
+            <a class="btn col-btn">Try it out!</a>
+            <div class="col--blob">&nbsp;</div>
+            <div class="col--blobline">&nbsp;</div>
+          </div>
+        </div>
+      </section>
 
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image02.jpg" alt="flower">
-              <figcaption>Beauty</figcaption>
-            </figure>
-            <h3>Depression: Causes and How to Overcome It</h3>
-            <p>Sadhguru explains why depression happens, what happens to you when you are depressed and how to come out of depression...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://isha.sadhguru.org/in/en/wisdom/article/depression-causes-how-to-overcome';" value="Read More" />
-          </article>
+      <section class="section__blog" id="blog">
+        <div class="container">
+          <h2 class="blog-title">Blogs and Articles </h2>
+          <p class="blog-sub">You are not alone.</p>
+          <div class="blog-container">
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image01.jpg" alt="sunset">
+                <figcaption>Hope</figcaption>
+              </figure>
+              <h3>Banish Depression from Your System</h3>
+              <p>Sadhguru speaks on how to handle yourself in such a way that you can banish depression from your system: “In yoga, depression is handled at the level of the...</p>
+              <a class="blog-btn btn" href="https://isha.sadhguru.org/yoga/yoga-articles-yoga/banish-depression-from-your-system/">Read More</a>
+            </article>
 
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image03.jpg" alt="mountain-treking">
-              <figcaption>Adventure</figcaption>
-            </figure>
-            <h3>The Best Adventure Travel Blogs Right Now</h3>
-            <p>In the last few years a ton of people started travel blogging – some, to put it nicely, offering more quality content than others. So you don’t have to sort...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://www.oars.com/blog/9-adventure-travel-blogs-you-should-be-reading/';" value="Read More" />
-          </article>
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image02.jpg" alt="flower">
+                <figcaption>Beauty</figcaption>
+              </figure>
+              <h3>Depression: Causes and How to Overcome It</h3>
+              <p>Sadhguru explains why depression happens, what happens to you when you are depressed and how to come out...</p>
+              <a class="blog-btn btn" href="https://isha.sadhguru.org/in/en/wisdom/article/depression-causes-how-to-overcome">Read More</a>
+            </article>
 
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image04.jpg" alt="cycle">
-              <figcaption>Be happy</figcaption>
-            </figure>
-            <h3>How To Be Happy: >175 Tips to Help You Live a Happier Life</h3>
-            <p>How to be happy? It’s one of the most frequently asked questions in life. Yet, it all seems so subjective and...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://www.trackinghappiness.com/happy-blog/';" value="Read More" />
-          </article>
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image03.jpg" alt="mountain-treking">
+                <figcaption>Adventure</figcaption>
+              </figure>
+              <h3>The Best Adventure Travel Blogs Right Now</h3>
+              <p>In the last few years a ton of people started travel blogging – some, to put it nicely, offering more quality content than...</p>
+              <a class="blog-btn btn" href="https://www.oars.com/blog/9-adventure-travel-blogs-you-should-be-reading/">Read More</a>
+            </article>
 
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image05.jpg" alt="flower">
-              <figcaption>Live</figcaption>
-            </figure>
-            <h3>How to Live a Happier Life: 3 Quick Things You Can Do Today</h3>
-            <p>Happiness must not always come from big things and events. It can come from smaller, daily habits...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://www.positivityblog.com/happy-today/';" value="Read More" />
-          </article>
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image04.jpg" alt="cycle">
+                <figcaption>Be happy</figcaption>
+              </figure>
+              <h3>How To Be Happy: >175 Tips to Help You Live a Happier Life</h3>
+              <p>How to be happy? It’s one of the most frequently asked questions in life. Yet, it all seems so subjective and...</p>
+              <a class="blog-btn btn" href="https://www.trackinghappiness.com/happy-blog/">Read More</a>
+            </article>
 
-          <article>
-            <figure>
-              <img class="blog-img" src="image\image06.jpg" alt="white-wall">
-              <figcaption>Move On</figcaption>
-            </figure>
-            <h3>Blog - Move On</h3>
-            <p>We're starting our new blog series with advice and tips on coping with stress. Our rebrand launch There have been some big changes at...</p>
-            <input class="input-btn" type="button" onclick="location.href='https://moveon.org.uk/blog';" value="Read More" />
-          </article>
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image05.jpg" alt="flower">
+                <figcaption>Live</figcaption>
+              </figure>
+              <h3>How to Live a Happier Life: 3 Quick Things You Can Do Today</h3>
+              <p>Happiness must not always come from big things and events. It can come from smaller, daily habits...</p>
+              <a class="blog-btn btn" href="https://www.positivityblog.com/happy-today/">Read More</a>
+            </article>
 
+            <article>
+              <figure>
+                <img class="blog-img" src="image\image06.jpg" alt="white-wall">
+                <figcaption>Move On</figcaption>
+              </figure>
+              <h3>Blog - Move On</h3>
+              <p>We're starting our new blog series with advice and tips on coping with stress. Our rebrand launch There have been some big changes at...</p>
+              <a class="blog-btn btn" href="https://moveon.org.uk/blog">Read More</a>
+            </article>
+          </div>
         </div>
       </section>
 
