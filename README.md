@@ -15,9 +15,8 @@ and fight depression.
 ## Technologies
 * HTML5
 * CSS
-* JavaScript-JQuery
+* JavaScript
 * Node JS
-* Bootstrap
 
 
 ## Dev Dependencies
