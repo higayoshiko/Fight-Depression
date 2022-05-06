@@ -10,12 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- font awesome for exit icon -->
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
-  <title></title>
+
+  <title>Fight Depression</title>
 </head>
+
 <body>
   <div class="page-container">
     <header class="header">
@@ -25,33 +27,33 @@
           <ul class="ul">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="reminder.html">Reminder</a></li>
-            <li><a href="#section__quiz" class="quiz-btn">Take the quiz</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#reminder">Reminder</a></li>
+            <li><a href="#quiz" class="quiz-btn btn col-btn">Take the quiz</a></li>
           </ul>
         </nav>
         <div class="nav-blobline">&nbsp;</div>
       </div>
       <nav class="media-nav">
-        <div class="logo-2"><a href="#">Fight <i class="fas fa-fist-raised fa-2x"></i> Depression</a></div>
+        <div class="logo--hidden"><a href="#">Fight <i class="fas fa-fist-raised fa-2x"></i> Depression</a></div>
         <ul class="ul-2">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="reminder.html">Reminder</a></li>
-          <li><a href="#section__quiz">Take the quiz</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#reminder">Reminder</a></li>
+          <li><a href="#quiz">Take the quiz</a></li>
         </ul>
       </nav>
       <div class="main-header">
         <div class="container grid grid-2-columns">
-          <div class="img-ctn">
-            <div class="img-blob--1">&nbsp;</div>
-            <div class="img-blobline--1">&nbsp;</div>
-            <div class="img-blob--2">&nbsp;</div>
-            <div class="img-blobline--2">&nbsp;</div>
-            <img src="image/toucan.png" class="img--toucan" alt="toucan-img">
+          <div class="main__imgs">
+            <div class="main-blob--1">&nbsp;</div>
+            <div class="main-blobline--1">&nbsp;</div>
+            <div class="main-blob--2">&nbsp;</div>
+            <div class="main-blobline--2">&nbsp;</div>
+            <img src="image/toucan.png" class="header-img" alt="toucan-img">
           </div>
-          <div class="text-ctn">
+          <div class="main__texts">
             <h1 class="text__h1">Hello there human! <br /> I am Tuco.
               I will help you overcome depression.
             </h1>
@@ -66,21 +68,21 @@
     </header>
 
     <main>
-      <section class="section__quiz" id="section__quiz">
+      <section class="section__quiz" id="quiz">
         <div class="container grid grid-2-columns">
-          <div class="quiz-text-ctn">
-            <h2 class="quiz-text__h2">Take quiz now!</h2>
-            <p class="quiz-text__p">Depression is very common and a serious illness. It affects your everyday life, the way you feel, the way you think
+          <div class="col__text-ctn">
+            <h2 class="col__h2">Take quiz now!</h2>
+            <p class="col__p">Depression is very common and a serious illness. It affects your everyday life, the way you feel, the way you think
               and the way you communicate with others. If you think you are suffering from depression it is better to see an expert. Please take our 2 minute
               quiz to check if you have depression.</p>
-            <a class="quiz-btn">Take the quiz</a>
-            <div class="quiz-text--blob">&nbsp;</div>
-            <div class="quiz-text--blobline">&nbsp;</div>
+            <a class="quiz-btn btn col-btn">Take the quiz</a>
+            <div class="col--blob">&nbsp;</div>
+            <div class="col--blobline">&nbsp;</div>
           </div>
-          <div class="quiz-img-ctn">
-            <img src="image/quiz-img.png" class="quiz-img" alt="girl">
-            <div class="quiz-img--blob">&nbsp;</div>
-            <div class="quiz-img--blobline">&nbsp;</div>
+          <div class="quiz__img-ctn">
+            <img src="image/quiz-img.png" class="quiz__img" alt="girl">
+            <div class="quiz__img--blob">&nbsp;</div>
+            <div class="quiz__img--blobline">&nbsp;</div>
           </div>
         </div>
         <div class="quiz-window">
@@ -306,16 +308,104 @@
           </div>
         </div>
       </section>
-      <section class="about-us" id="about">
-        <div class="container grid grid-2-columns about-gap">
-          <div class="about-text-ctn about-center">
+
+      <section class="section__reminder" id="reminder">
+        <div class="container grid grid-2-columns">
+          <div class="reminder__img-ctn">
+            <img src="image/calendar.svg" class="reminder__img" alt="reminder">
+          </div>
+          <div class="col__text-ctn">
+            <h2 class="col__h2">Try our reminder feature!</h2>
+            <p class="col__p">Remembering even important things might be a struggle when you have
+              depression. This mental illness has been linked to memory problems and confusion. Keeping a
+              checklist will help you with your daily challenges and make things a little bit easier.
+            </p>
+            <a class="btn col-btn">Try it out!</a>
+            <div class="col--blob">&nbsp;</div>
+            <div class="col--blobline">&nbsp;</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__blog" id="blog">
+        <div class="container">
+          <h2 class="blog-title">Blogs and Articles </h2>
+          <p class="blog-sub">You are not alone.</p>
+          <div class="blog-container">
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image01.jpg" alt="sunset">
+                <figcaption>Hope</figcaption>
+              </figure>
+              <h3>Banish Depression from Your System</h3>
+              <p>Sadhguru speaks on how to handle yourself in such a way that you can banish depression from your system: “In yoga, depression is handled at the level of the...</p>
+              <a class="blog-btn btn" href="https://isha.sadhguru.org/yoga/yoga-articles-yoga/banish-depression-from-your-system/">Read More</a>
+            </article>
+
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image02.jpg" alt="flower">
+                <figcaption>Beauty</figcaption>
+              </figure>
+              <h3>Depression: Causes and How to Overcome It</h3>
+              <p>Sadhguru explains why depression happens, what happens to you when you are depressed and how to come out...</p>
+              <a class="blog-btn btn" href="https://isha.sadhguru.org/in/en/wisdom/article/depression-causes-how-to-overcome">Read More</a>
+            </article>
+
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image03.jpg" alt="mountain-treking">
+                <figcaption>Adventure</figcaption>
+              </figure>
+              <h3>The Best Adventure Travel Blogs Right Now</h3>
+              <p>In the last few years a ton of people started travel blogging – some, to put it nicely, offering more quality content than...</p>
+              <a class="blog-btn btn" href="https://www.oars.com/blog/9-adventure-travel-blogs-you-should-be-reading/">Read More</a>
+            </article>
+
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image04.jpg" alt="cycle">
+                <figcaption>Be happy</figcaption>
+              </figure>
+              <h3>How To Be Happy: >175 Tips to Help You Live a Happier Life</h3>
+              <p>How to be happy? It’s one of the most frequently asked questions in life. Yet, it all seems so subjective and...</p>
+              <a class="blog-btn btn" href="https://www.trackinghappiness.com/happy-blog/">Read More</a>
+            </article>
+
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image05.jpg" alt="flower">
+                <figcaption>Live</figcaption>
+              </figure>
+              <h3>How to Live a Happier Life: 3 Quick Things You Can Do Today</h3>
+              <p>Happiness must not always come from big things and events. It can come from smaller, daily habits...</p>
+              <a class="blog-btn btn" href="https://www.positivityblog.com/happy-today/">Read More</a>
+            </article>
+
+            <article>
+              <figure>
+                <img class="blog__img" src="image\image06.jpg" alt="white-wall">
+                <figcaption>Move On</figcaption>
+              </figure>
+              <h3>Blog - Move On</h3>
+              <p>We're starting our new blog series with advice and tips on coping with stress. Our rebrand launch There have been some big changes at...</p>
+              <a class="blog-btn btn" href="https://moveon.org.uk/blog">Read More</a>
+            </article>
+          </div>
+          <a class="btn--more" href="#">See More &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section__about" id="about">
+        <div class="container grid grid-2-columns about--gap">
+          <div class="about-text-ctn about--center">
             <p class="about-us__p">We are the team</p>
             <h2 class="about-us__h2">Toucans-04</h2>
           </div>
-          <div class="about-img-ctn">
-            <img src="image/about.png" class="about-img" alt="toucan">
+          <div class="about__img-ctn">
+            <img src="image/about.png" class="about__img" alt="toucan">
           </div>
-          <div class="team-ctn grid grid-4-columns about-center">
+          <div class="team-ctn grid grid-4-columns about--center">
             <div class="team">
               <p class="team-names">Hertanto</p>
             </div>
@@ -334,7 +424,7 @@
     </main>
     <footer id="footer" class="footer">
       Chingu V35
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" x="0px" y="0px">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 96 96" x="0px" y="0px">
         <title>Artboard 23</title>
         <g>
           <path d="M8,42.5652V86.5c8,0,16-8,16-22v-4C24,48.5916,20.9534,41.7515,8,42.5652Z"></path>
