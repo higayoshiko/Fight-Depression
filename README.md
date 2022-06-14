@@ -16,7 +16,6 @@ and fight depression.
 * HTML5
 * CSS
 * JavaScript
-* Node JS
 
 
 ## Dev Dependencies
